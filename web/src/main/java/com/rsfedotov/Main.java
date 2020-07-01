@@ -3,9 +3,6 @@ package com.rsfedotov;
 import com.pengrad.telegrambot.request.SetWebhook;
 import com.rsfedotov.handler.BotHandlerBase;
 import com.rsfedotov.handler.EchoBot;
-import spark.Request;
-import spark.Response;
-import spark.Route;
 
 import static spark.Spark.*;
 
@@ -34,23 +31,6 @@ public class Main {
             post("/" + token, bot);
             if (appUrl != null) {
                 bot.getBot().execute(new SetWebhook().url(appUrl + "/" + token));
-            }
-        }
-
-        // can declare other routes
-        get("/", (req, res) -> "index page");
-        get("/hello", (req, res) -> "Hello World");
-        get("/test", new Test());
-    }
-
-    private static class Test implements Route {
-        @Override
-        public Object handle(Request request, Response response) {
-            String query = request.queryParams("query");
-            try {
-                return query;
-            } catch (Throwable t) {
-                return t.getMessage();
             }
         }
     }
