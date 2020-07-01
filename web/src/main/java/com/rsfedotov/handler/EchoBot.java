@@ -8,7 +8,7 @@ import com.rsfedotov.service.EchoService;
 
 public class EchoBot extends BotHandlerBase {
 
-    private static final String TOKEN = "1240357126:AAEijDaLiuRx-DeH4MZkmWpB6ysSrnLjf9E";
+    private static final String TOKEN = System.getenv("TOKEN");
     private final TelegramBot bot = new TelegramBot(TOKEN);
 
     @Override
