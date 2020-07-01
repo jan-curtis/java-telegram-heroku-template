@@ -61,7 +61,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.example.Main</mainClass>
+                            <mainClass>com.rsfedotov.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
