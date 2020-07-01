@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>service</module>
         <module>web</module>
+        <module>service</module>
     </modules>
 </project>
