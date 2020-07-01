@@ -2,6 +2,5 @@
 /java-telegram-heroku-template.iml
 /web/target/
 /web/web.iml
-/service/pom.xml
-/service/service.iml
 /service/target/
+/service/service.iml
