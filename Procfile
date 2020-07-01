@@ -1,0 +1,1 @@
+web: java -jar web/target/java-telegram-heroku-template-web-1.0-jar-with-dependencies.jar
